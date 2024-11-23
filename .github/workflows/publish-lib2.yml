@@ -3,7 +3,7 @@ name: Publish lib2 to npm
 on:
   push:
     branches:
-      - main
+      - master
     paths:
       - "lib2/**"
       - ".github/workflows/publish-lib2.yml"
