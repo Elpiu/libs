@@ -3,7 +3,7 @@ name: Publish lib1 to npm
 on:
   push:
     branches:
-      - master
+      - main
     paths:
       - "lib1/**"
       - ".github/workflows/publish-lib1.yml"
@@ -21,14 +21,21 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: "18" # Specifica la versione di Node.js
+          node-version: "18"
           cache: "npm"
+          cache-dependency-path: "lib1/package-lock.json"
+
+      # Debug della directory corrente
+      - name: Debug current directory
+        run: |
+          pwd
+          ls -la
 
       # Installa le dipendenze della libreria
       - name: Install dependencies
         run: |
           cd lib1
-          npm install
+          npm install --no-fund --no-audit
 
       # Build della libreria
       - name: Build the library

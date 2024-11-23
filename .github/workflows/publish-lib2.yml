@@ -23,6 +23,7 @@ jobs:
         with:
           node-version: "18" # Specifica la versione di Node.js
           cache: "npm"
+          cache-dependency-path: "lib2/package-lock.json"
 
       # Installa le dipendenze della libreria
       - name: Install dependencies
