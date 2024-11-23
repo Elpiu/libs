@@ -1,0 +1,28 @@
+{
+  "workbench.colorTheme": "Default Dark Modern",
+
+  "editor.defaultFormatter": "esbenp.prettier-vscode", // Imposta Prettier come formattatore predefinito
+  "editor.formatOnSave": true, // Formatta automaticamente quando salvi
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode" // Prettier per JavaScript
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode" // Prettier per TypeScript
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode" // Prettier per HTML
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode" // Prettier per CSS
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode" // Prettier per JSON
+  },
+  "[yaml]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode" // Prettier per YAML
+  },
+  "nxConsole.nxWorkspacePath": "",
+  "github-actions.workflows.pinned.workflows": [
+    ".github/workflows/publish-package.yml"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "recommendations": [
+    "nrwl.angular-console",
+    "esbenp.prettier-vscode",
+    "firsttris.vscode-jest-runner",
+    "pomdtr.excalidraw-editor",
+    "grapecity.gc-excelviewer",
+    "wayou.vscode-todo-highlight",
+    "dbaeumer.vscode-eslint"
+  ]
+}
