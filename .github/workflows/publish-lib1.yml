@@ -25,17 +25,11 @@ jobs:
           cache: "npm"
           cache-dependency-path: "lib1/package-lock.json"
 
-      # Debug della directory corrente
-      - name: Debug current directory
-        run: |
-          pwd
-          ls -la
-
       # Installa le dipendenze della libreria
       - name: Install dependencies
         run: |
           cd lib1
-          npm install --no-fund --no-audit
+          npm install
 
       # Build della libreria
       - name: Build the library
