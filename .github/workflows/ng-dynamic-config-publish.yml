@@ -1,15 +1,15 @@
-name: Publish lib1 to npm
+name: Publish ng-dynamic-config to npm
 
 on:
   push:
     branches:
-      - master
+      - my-libs
     paths:
-      - "lib1/**"
-      - ".github/workflows/publish-lib1.yml"
+      - "ng-dynamic-config/**"
+      - ".github/workflows/ng-dynamic-config-publish.yml"
 
 jobs:
-  publish-lib1:
+  publish-ng-dynamic-config:
     runs-on: ubuntu-latest
 
     steps:
@@ -23,18 +23,18 @@ jobs:
         with:
           node-version: "18"
           cache: "npm"
-          cache-dependency-path: "lib1/package-lock.json"
+          cache-dependency-path: "ng-dynamic-config/package-lock.json"
 
       # Installa le dipendenze della libreria
       - name: Install dependencies
         run: |
-          cd lib1
+          cd ng-dynamic-config
           npm install
 
       # Build della libreria
       - name: Build the library
         run: |
-          cd lib1
+          cd ng-dynamic-config
           npm run build
 
       # Autentica su npm
@@ -44,5 +44,5 @@ jobs:
       # Pubblica la libreria su npm
       - name: Publish to npm
         run: |
-          cd lib1
+          cd ng-dynamic-config
           npm publish --access public

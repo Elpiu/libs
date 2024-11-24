@@ -3,23 +3,23 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "mylib2": {
+    "ng-dynamic-config": {
       "projectType": "library",
-      "root": "projects/mylib2",
-      "sourceRoot": "projects/mylib2/src",
+      "root": "projects/ng-dynamic-config",
+      "sourceRoot": "projects/ng-dynamic-config/src",
       "prefix": "lib",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
-            "project": "projects/mylib2/ng-package.json"
+            "project": "projects/ng-dynamic-config/ng-package.json"
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/mylib2/tsconfig.lib.prod.json"
+              "tsConfig": "projects/ng-dynamic-config/tsconfig.lib.prod.json"
             },
             "development": {
-              "tsConfig": "projects/mylib2/tsconfig.lib.json"
+              "tsConfig": "projects/ng-dynamic-config/tsconfig.lib.json"
             }
           },
           "defaultConfiguration": "production"
@@ -27,7 +27,7 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "tsConfig": "projects/mylib2/tsconfig.spec.json",
+            "tsConfig": "projects/ng-dynamic-config/tsconfig.spec.json",
             "polyfills": [
               "zone.js",
               "zone.js/testing"
@@ -38,6 +38,6 @@
     }
   },
   "cli": {
-    "analytics": "b8fff36f-7a3e-4cd7-b358-2cb8d3f1363e"
+    "analytics": "c418271b-c19b-4a50-83e9-149a75ffd3f6"
   }
 }

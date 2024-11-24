@@ -1,5 +1,5 @@
 {
-  "name": "aa-lib2",
+  "name": "ng-dynamic-config",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",

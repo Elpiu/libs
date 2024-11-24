@@ -11,8 +11,8 @@
     "noFallthroughCasesInSwitch": true,
     "skipLibCheck": true,
     "paths": {
-      "mylib2": [
-        "./dist/mylib2"
+      "ng-dynamic-config": [
+        "./dist/ng-dynamic-config"
       ]
     },
     "esModuleInterop": true,
