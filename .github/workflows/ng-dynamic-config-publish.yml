@@ -44,5 +44,5 @@ jobs:
       # Pubblica la libreria su npm
       - name: Publish to npm
         run: |
-          cd dist/ng-dynamic-config
+          cd ng-dynamic-config/dist/ng-dynamic-config
           npm publish --access public
