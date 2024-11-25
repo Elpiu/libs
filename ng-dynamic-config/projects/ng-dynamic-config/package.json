@@ -1,15 +1,27 @@
 {
   "name": "ng-dynamic-config",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": {
     "name": "Elpidio Mazza",
     "url": "https://github.com/Elpiu"
   },
   "description": "Angular utility designed to streamline the process of bootstrapping an Angular application with dynamic configuration data. It allows you to fetch configuration files from specified URLs, manage them using a service, and dynamically register additional providers based on the loaded configuration.",
-  "peerDependencies": {
-    "@angular/common": "^18.2.0",
-    "@angular/core": "^18.2.0"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Elpiu/ng-dynamic-config.git"
   },
+  "homepage": "https://github.com/Elpiu/ng-dynamic-config#readme",
+  "bugs": {
+    "url": "https://github.com/Elpiu/ng-dynamic-config/issues"
+  },
+  "keywords": [
+    "angular",
+    "dynamic-config",
+    "configuration",
+    "angular-library",
+    "bootstrap"
+  ],
+  "license": "MIT",
   "dependencies": {
     "tslib": "^2.3.0"
   },
