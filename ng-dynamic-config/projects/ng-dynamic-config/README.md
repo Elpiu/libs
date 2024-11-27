@@ -22,7 +22,7 @@ In your `main.ts` or `bootstrap.ts`, import the necessary modules:
 import { appConfig } from "./app/app.config";
 import { AppComponent } from "./app/app.component";
 // Make sure of this path
-import { bootstrapApplication } from "@ng-dynamic-config";
+import { bootstrapApplication } from "ng-dynamic-config";
 ```
 
 ## Step 2: Define Configuration Keys
